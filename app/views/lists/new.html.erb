@@ -1,0 +1,12 @@
+<h1>Add a new category</h1>
+
+<%= form_for @list do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+<br>
+  <%= f.submit "Ajouter la catégorie" %>
+<% end %>
+<br>
+<%= link_to 'Back to Categories', lists_path(@list) %>
